@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Jquery CounterUp Plugin</title>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h1>Counter Up without perameter</h1>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-4">
+  				<h2 class="counter_1">1,234,567.00</h2>
+  			</div>
+  			<div class="col-md-4">
+  				<h2 class="counter_1">1.99</h2>
+  			</div>
+  			<div class="col-md-4">
+  				<h2 class="counter_1">12345</h2>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h1>Counter Up with perameter</h1>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-4">
+  				<h2 class="counter_2">1,234,567.00</h2>
+  			</div>
+  			<div class="col-md-4">
+  				<h2 class="counter_2">1.99</h2>
+  			</div>
+  			<div class="col-md-4">
+  				<h2 class="counter_2">12345</h2>
+  			</div>
+  		</div>
+  	</div>
+
+
+
+    <!-- jquery links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('.counter_1').counterUp();
+    		$('.counter_2').counterUp({
+    			delay: 10,
+    			time: 1000
+			});
+    	});
+    </script>
+  </body>
+</html>
